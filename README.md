@@ -15,6 +15,15 @@ The lab simulates:
 
 Designed to showcase OT-aware SOC analyst capability.
 
+## Skills Demonstrated
+
+- Industrial protocol analysis (Modbus TCP)
+- Unauthorized command detection
+- Packet inspection (Wireshark)
+- Incident documentation workflow
+- MITRE ATT&CK for ICS mapping
+- Detection engineering mindset
+- OT-to-SOC skill translation
 
 ---
 
