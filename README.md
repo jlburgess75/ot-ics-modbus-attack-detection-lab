@@ -1,19 +1,20 @@
-# OT/ICS Modbus Attack Detection Lab
+# OT/ICS Modbus TCP Attack Detection Lab
 
-## Overview
-This project simulates real-world OT/ICS cybersecurity scenarios involving Modbus read/write operations, unauthorized write activity, and packet-level traffic analysis.
+## Executive Summary
 
-The lab demonstrates:
-- Detection of unauthorized Modbus write commands (Function Code 06 / 16)
-- Wireshark packet analysis of industrial traffic
-- Attack reconstruction using command logs and PCAP evidence
-- OT-to-SOC incident documentation workflow
-- MITRE ATT&CK mapping for ICS environments
+This repository demonstrates detection and analysis of unauthorized Modbus TCP write activity in an industrial control environment.
 
-Built for:
-- SOC Analyst interview demonstrations
-- CySA+ skill reinforcement
-- OT security transition portfolio (Mechanical Tech → OT-aware SOC Analyst)
+The lab simulates:
+
+- Normal Modbus read operations (Function Code 03)
+- Unauthorized write commands (Function Code 06)
+- Packet-level evidence capture using Wireshark
+- SOC-style incident documentation
+- MITRE ATT&CK (ICS) mapping
+- Detection engineering logic for SIEM environments
+
+Designed to showcase OT-aware SOC analyst capability.
+
 
 ---
 
