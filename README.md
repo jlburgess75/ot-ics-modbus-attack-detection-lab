@@ -66,3 +66,21 @@ Unauthorized RTU writes can:
 - Modify configuration parameters
 - Cause production disruption
 - Create equipment damage or safety risk
+- 
+  ### Detection Engineering Approach
+
+This lab detects unauthorized Modbus RTU write activity (Function Code 06) by:
+
+1. Logging Modbus transactions as structured key-value telemetry
+2. Ingesting events into Splunk SIEM
+3. Creating SPL queries to:
+   - Detect write function codes (fc=6)
+   - Identify unexpected register modifications
+   - Alert on abnormal write frequency
+4. Triggering a real-time alert for unauthorized write behavior
+
+Example SPL detection:
+
+index=main modbus_rtu_write fc=6
+| where reg=5
+
